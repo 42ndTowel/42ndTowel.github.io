@@ -7,8 +7,8 @@ build_search_index = false
 output_dir = "docs"
 
 minify_html = false
-generate_feed = false
-feed_filename = "feed.xml"
+generate_feeds = false
+feed_filenames = ["rss.xml"]
 taxonomies = [
     {name = "tags"},
 ]

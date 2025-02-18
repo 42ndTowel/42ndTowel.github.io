@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="/css/var.css">
     <link rel="stylesheet" href="/css/base.css">
     {% block css %}{% endblock css %}
+    {% block rss %}
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
     {% if config.extra.analytics == 'umami' -%}
     <script async defer data-website-id="{{ config.extra.umami.website_id }}" src="{{ config.extra.umami.src }}"></script>
     {%- endif -%}
